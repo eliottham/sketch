@@ -9,7 +9,10 @@ $(document).ready(function(){
 		}
 	}
 	$(".cols").hover(function(){
-		$(this).css("background-color", "blue");
+		$(this).css("background-color", "red");
 	});
-		
+
+
+
+	
 	});
