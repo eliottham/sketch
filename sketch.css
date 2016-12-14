@@ -6,9 +6,9 @@
 	width: 640px;
 }
 #container td{
-	background-color: black;
-	border: 0;
-	padding: 1px;
+	background-color: white;
+	border: 1px solid black;
+	margin: 0px;
 }
 
 .button{
