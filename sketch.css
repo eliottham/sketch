@@ -17,13 +17,16 @@
 	margin: 0 auto;
 	margin-top: 20px;
 	height: 50px;
-	border: 2px solid #c6c6c6;
+	border: 2px solid red;
 	font-style: arial, sans-serif;
 	font-weight: bold;
-	background-color:aliceblue
+	background-color:black;
+	color: white;
 	}
 
 .button:hover{
 	border: 2px solid black;
     box-shadow: 0 2px 2px rgba(0,0,0,0);
+    background-color: white;
+    color: red;
 }

@@ -2,10 +2,6 @@ $(document).ready(function(){
 
 	makeGrid(16, 16);								//Initialize 16x16 grid.
 
-//	$(".cols").hover(function(){					//Change color of grid element if hovered over.
-//		$(this).css("background-color", "red");
-//	});
-
 	$(".button").click(function(){
 		var size = prompt("Please enter the size of your grid.");
 		$('#container').empty();
