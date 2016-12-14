@@ -1,24 +1,21 @@
-.cols{
-	display: inline-block;
-	background-color: black;
-	height: 30px;
-	width: 30px;
-	margin: 1px 5px 1px 5px; 
-}
 
 #container{
-	width: 100%;
-	padding-top: 25px;
-}
-.rows{ 
+	margin-left: auto;
+	margin-right: auto;
+	height: 640px;
 	width: 640px;
-	margin: 0 auto;
 }
+#container td{
+	background-color: black;
+	border: 0;
+	padding: 1px;
+}
+
 .button{
 	display: block;
 	width: 10%;
 	margin: 0 auto;
-	margin-top: 25px;
+	margin-top: 20px;
 	height: 50px;
 	border: 2px solid #c6c6c6;
 	font-style: arial, sans-serif;

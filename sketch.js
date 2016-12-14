@@ -1,18 +1,28 @@
 $(document).ready(function(){
-	var row = 16;
-	var col = 16;
 
-	for(var i = 1; i <= row; i++){
-		$("#container").append('<div id="row' + i + '" class="rows"></div>');
-		for(var j = 1; j <= col; j++){
-			$('#row' + i + '').append('<div id="col' + j + '" class="cols"></div>');
-		}
-	}
-	$(".cols").hover(function(){
-		$(this).css("background-color", "red");
+	makeGrid(16, 16);								//Initialize 16x16 grid.
+
+//	$(".cols").hover(function(){					//Change color of grid element if hovered over.
+//		$(this).css("background-color", "red");
+//	});
+
+	$(".button").click(function(){
+		var size = prompt("Please enter the size of your grid.");
+		$('#container').empty();
+		makeGrid(size, size);
 	});
-
-
 
 	
+});
+
+function makeGrid(row, col){						//Function for creating grid of size row x col.
+	for(var i = 1; i <= row; i++){
+		$("#container").append('<tr id="row' + i + '"></tr>');
+		for(var j = 1; j <= col; j++){
+			$('#row' + i + '').append('<td id="col' + j + '" class="cols"></td>');
+		}
+	}
+	$(".cols").hover(function(){					//Change color of grid element if hovered over.
+		$(this).css("background-color", "red");
 	});
+}
